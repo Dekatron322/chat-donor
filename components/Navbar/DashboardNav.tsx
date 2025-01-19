@@ -72,7 +72,7 @@ const DashboardNav = () => {
             <div className="flex items-center gap-2">
               <img src="/DashboardImages/Icon container.png" alt="avatar" />
               <img src="/DashboardImages/Icon container (1).png" alt="avatar" />
-              <Image src="/DashboardImages/Avatar.png" width={48} height={48} alt="avatar" className="rounded-full" />
+              <Image src="/main-logo.png" width={40} height={40} alt="avatar" className="rounded-full" />
               <div>
                 <p className="text-sm font-medium text-[#25396F]">loading...</p>
 
@@ -96,7 +96,7 @@ const DashboardNav = () => {
               <div className="flex items-center gap-2">
                 <img src="/DashboardImages/Icon container.png" alt="avatar" />
                 <img src="/DashboardImages/Icon container (1).png" alt="avatar" />
-                <Image src="/DashboardImages/Avatar.png" width={48} height={48} alt="avatar" className="rounded-full" />
+                <Image src="/main-logo.png" width={40} height={40} alt="avatar" className="rounded-full" />
                 <div>
                   <p className="text-sm font-medium text-[#25396F]">{user.username}</p>
                   {/* <p className="text-xs text-gray-500">{user.email}</p> */}
@@ -115,8 +115,7 @@ const DashboardNav = () => {
             <Image src="/Logo.png" width={150} height={43} alt="dekalo" />
           </Link>
           <div className="flex h-[50px] items-center justify-center gap-1 rounded-full bg-[#EDF2F7] px-1">
-            <Image src="/DashboardImages/User.svg" width={40} height={40} alt="avatar" />
-            <Image className="mr-4" src="/DashboardImages/dropdown.svg" width={15.68} height={15.68} alt="avatar" />
+            <Image src="/main-logo.png" width={40} height={40} alt="avatar" />
           </div>
         </div>
 
