@@ -219,7 +219,7 @@ const PreOrderTable = () => {
         {currentRows.map((order) => {
           const percentage = calculatePercentage(order.amount_spent, order.budget)
           return (
-            <div className="w-full rounded-md bg-white p-4 shadow-md">
+            <div key={order.id} className="w-full rounded-md bg-white p-4 shadow-md">
               <p className="font-bold text-[#25396F]">{order.name}</p>
               <div className="flex justify-between">
                 <div className="mb-3 mt-1 flex items-center gap-2">
