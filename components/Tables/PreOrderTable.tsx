@@ -164,7 +164,7 @@ const PreOrderTable = () => {
     <div className="flex-3 relative  flex flex-col rounded-md ">
       <div className="flex items-center justify-between ">
         <div className="flex gap-4 max-sm:mt-2">
-          <div className="flex h-[42px] w-[380px] items-center justify-between gap-3 rounded-md border border-[#707FA3] px-3 py-1 text-[#707070] max-2xl:w-[300px] max-sm:w-[150px]">
+          <div className="flex h-[42px] w-[380px] items-center justify-between gap-3 rounded-md border border-[#707FA3] px-3 py-1 text-[#707070] max-2xl:w-[300px] max-sm:w-[150px] ">
             <Image src="/DashboardImages/Search.svg" width={16} height={16} alt="Search Icon" />
             <input
               type="text"
@@ -211,7 +211,7 @@ const PreOrderTable = () => {
         </div>
       </div>
 
-      <div className="mb-10 mt-10 grid grid-cols-3 gap-4 max-2xl:grid-cols-3 max-sm:grid-cols-1">
+      <div className="mb-10 mt-10 grid grid-cols-3 gap-4 max-2xl:grid-cols-3 max-sm:grid-cols-1 3xl:grid-cols-4">
         {currentRows.map((order) => {
           const percentage = calculatePercentage(order.amount_spent, order.budget)
           return (
