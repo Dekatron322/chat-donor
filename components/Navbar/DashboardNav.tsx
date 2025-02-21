@@ -49,7 +49,7 @@ const DashboardNav = () => {
       const userId = localStorage.getItem("id")
       if (userId) {
         try {
-          const response = await axios.get(`https://api.shalomescort.org/custom-user/get-user-detail/${userId}/`)
+          const response = await axios.get(`https://api.donorsrec.chats.cash/custom-user/get-user-detail/${userId}/`)
           setUser(response.data)
           console.log("User details fetched successfully:", response.data)
         } catch (error) {

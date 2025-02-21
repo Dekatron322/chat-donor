@@ -13,7 +13,7 @@ const ProjectSummary = () => {
     if (projectId) {
       const fetchProjectData = async () => {
         try {
-          const response = await axios.get(`https://api.shalomescort.org/project/project/${projectId}/`)
+          const response = await axios.get(`https://api.donorsrec.chats.cash/project/project/${projectId}/`)
           setProjectData(response.data)
           setLoading(false)
         } catch (err) {

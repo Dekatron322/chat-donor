@@ -37,7 +37,7 @@ const SignIn: React.FC = () => {
     setError(null)
 
     try {
-      const response = await axios.post("https://api.shalomescort.org/custom-user/sign-in/", {
+      const response = await axios.post("https://api.donorsrec.chats.cash/custom-user/sign-in/", {
         email,
         password,
       })

@@ -36,7 +36,7 @@ const SignUp: React.FC = () => {
     setError(null)
 
     try {
-      const response = await fetch("https://api.shalomescort.org/custom-user/sign-up/", {
+      const response = await fetch("https://api.donorsrec.chats.cash/custom-user/sign-up/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -68,7 +68,7 @@ const CreatProjectModal = ({ isOpen, closeModal }: CreatProjectModalProps) => {
     }
 
     try {
-      const response = await fetch("https://api.shalomescort.org/project/project/", {
+      const response = await fetch("https://api.donorsrec.chats.cash/project/project/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

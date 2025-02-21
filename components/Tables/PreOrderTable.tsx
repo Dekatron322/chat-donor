@@ -44,7 +44,7 @@ const PreOrderTable = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("https://api.shalomescort.org/project/project/")
+        const response = await fetch("https://api.donorsrec.chats.cash/project/project/")
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`)
         }

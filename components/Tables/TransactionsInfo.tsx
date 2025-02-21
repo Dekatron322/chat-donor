@@ -74,7 +74,7 @@ const TransactionsInfo = () => {
     const projectId = localStorage.getItem("projectId")
 
     if (projectId) {
-      fetch(`https://api.shalomescort.org/project/project/${projectId}/`)
+      fetch(`https://api.donorsrec.chats.cash/project/project/${projectId}/`)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to fetch project data")

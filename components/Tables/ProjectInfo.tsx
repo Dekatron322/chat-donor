@@ -48,7 +48,7 @@ const ProjectInfo = () => {
 
   const fetchProjectProducts = async (projectId: string) => {
     try {
-      const response = await axios.get(`https://api.shalomescort.org/project/project/${projectId}/`)
+      const response = await axios.get(`https://api.donorsrec.chats.cash/project/project/${projectId}/`)
       const projectData = response.data
       const updatedProducts = projectData.products.map((product: any) => ({
         ...product,

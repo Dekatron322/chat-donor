@@ -38,7 +38,7 @@ export default function PreOrder() {
 
     if (projectId) {
       // Fetch project data from the API
-      fetch(`https://api.shalomescort.org/project/project/${projectId}/`)
+      fetch(`https://api.donorsrec.chats.cash/project/project/${projectId}/`)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to fetch project data")

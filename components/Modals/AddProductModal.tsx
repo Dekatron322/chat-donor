@@ -32,7 +32,7 @@ const AddproductModal = ({ projectId, isOpen, closeModal }: CreateProjectModalPr
   useEffect(() => {
     const fetchVendors = async () => {
       try {
-        const response = await fetch("https://api.shalomescort.org/vendor/")
+        const response = await fetch("https://api.donorsrec.chats.cash/vendor/")
         if (response.ok) {
           const data = (await response.json()) as OptionType[]
           setVendors(data)
@@ -68,7 +68,7 @@ const AddproductModal = ({ projectId, isOpen, closeModal }: CreateProjectModalPr
     }
 
     try {
-      const response = await fetch(`https://api.shalomescort.org/project/add-product-to-project/${projectId}/`, {
+      const response = await fetch(`https://api.donorsrec.chats.cash/project/add-product-to-project/${projectId}/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

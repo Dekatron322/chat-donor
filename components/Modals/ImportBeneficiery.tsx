@@ -31,10 +31,13 @@ const ImportBeneficiariesModal = ({ projectId, isOpen, onClose }: ImportBenefici
     formData.append("beneficiarys", file)
 
     try {
-      const response = await fetch(`https://api.shalomescort.org/project/import-beneficiary-to-project/${projectId}/`, {
-        method: "POST",
-        body: formData,
-      })
+      const response = await fetch(
+        `https://api.donorsrec.chats.cash/project/import-beneficiary-to-project/${projectId}/`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
 
       if (!response.ok) {
         throw new Error("Failed to import beneficiaries")
